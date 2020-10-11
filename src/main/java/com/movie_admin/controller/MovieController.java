@@ -8,6 +8,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import com.movie_admin.service.MovieService;
 import com.movie_admin.vo.MovieBean;
@@ -26,4 +27,5 @@ public class MovieController {
 		model.addAttribute("MovieList",mb);
 		return "table";
 	}
+	
 }
