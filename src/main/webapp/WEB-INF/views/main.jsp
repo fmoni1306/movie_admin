@@ -38,11 +38,11 @@
                 <div class="login-form">
                     <form action="<c:url value='/login'/>" method="post">
                         <div class="form-group">
-                            <label>Email address</label>
-                            <input type="email" name="id" class="form-control" placeholder="Email">
+                            <label>관리자 아이디</label>
+                            <input type="text" name="id" class="form-control" placeholder="Id">
                         </div>
                         <div class="form-group">
-                            <label>Password</label>
+                            <label>패스워드</label>
                             <input type="password" name="pass" class="form-control" placeholder="Password">
                         </div>
                         <div>${loginResult}</div>

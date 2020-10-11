@@ -8,7 +8,18 @@ public class MemberBean {
 	private String pass;
 	private String email;
 	private String phone;
+	private String bio;
 	private Date date;
+	
+	public String getBio() {
+		return bio;
+	}
+
+	public void setBio(String bio) {
+		this.bio = bio;
+	}
+
+	
 
 	public Date getDate() {
 		return date;

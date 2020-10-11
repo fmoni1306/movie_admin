@@ -29,12 +29,12 @@ public class HomeController {
 	
 	@RequestMapping(value = "/home/main", method = RequestMethod.GET)
 	public String home(Model model) {
-		List<MemberBean> list = memberService.getMember();
-		model.addAttribute("memberList", list);
 		return "home";
 	}
 	
 	
 	
+	
 
 }
+
