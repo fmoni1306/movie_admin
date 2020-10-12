@@ -10,6 +10,7 @@ import com.movie_admin.dao.MemberDAO;
 import com.movie_admin.exception.AdminException;
 import com.movie_admin.vo.AdminBean;
 import com.movie_admin.vo.MemberBean;
+import com.movie_admin.vo.TotalBean;
 
 @Service
 public class MemberServiceImpl implements MemberService {
@@ -27,5 +28,12 @@ public class MemberServiceImpl implements MemberService {
 	public void isAdmin(AdminBean ab) throws AdminException {
 		memberDAO.isAdmin(ab);
 	}
+
+	@Override
+	public TotalBean getCount() {
+		return memberDAO.getCount();
+	}
+	
+	
 
 }

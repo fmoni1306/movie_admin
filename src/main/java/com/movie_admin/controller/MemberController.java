@@ -14,6 +14,7 @@ import com.movie_admin.exception.AdminException;
 import com.movie_admin.service.MemberService;
 import com.movie_admin.vo.AdminBean;
 import com.movie_admin.vo.MemberBean;
+import com.movie_admin.vo.TotalBean;
 
 @Controller
 public class MemberController {
@@ -23,7 +24,6 @@ public class MemberController {
 	
 	@RequestMapping(value = "login", method = RequestMethod.POST)
 	public String login(AdminBean ab, Model model,HttpSession session) {
-		System.out.println(ab.getId()+"오냐");
 		try {
 			memberService.isAdmin(ab);
 			session.setAttribute("id", ab.getId());
@@ -35,12 +35,12 @@ public class MemberController {
 		}
 	}
 	
-	@RequestMapping(value = "member/table", method = RequestMethod.GET)
+	@RequestMapping(value = "home/member", method = RequestMethod.GET)
 	public String getMember(Model model) {
 		
 		List<MemberBean> list = memberService.getMember();
 		model.addAttribute("memberList", list);
-		return "tables";
+		return "member";
 	}
 
 }

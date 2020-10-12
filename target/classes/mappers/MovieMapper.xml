@@ -8,4 +8,24 @@
   	Select * from grade;
   </select>
   
+   <select id="getMovieCollection" resultType="com.movie_admin.vo.CollectionBean">
+    Select * from collection;
+  </select>
+  
+  <insert id="setCollectionIdx">
+  	insert into collection_idx values(null,#{idx},now());
+  </insert>
+  
+  <insert id="setCollectionIdx2">
+  	insert into collection_idx2 values(null,#{idx},now());
+  </insert>
+  
+  <select id="getCollection1" resultType="com.movie_admin.vo.CollectionBean">
+  	SELECT * from collection A JOIN collection_idx B ON A.idx = B.collection_idx group by A.idx order by B.date desc limit 1;
+  </select>
+  
+  <select id="getCollection2" resultType="com.movie_admin.vo.CollectionBean">
+  	SELECT * from collection A JOIN collection_idx2 B ON A.idx = B.collection_idx group by A.idx order by B.date desc limit 1;
+  </select>
+  
   </mapper>

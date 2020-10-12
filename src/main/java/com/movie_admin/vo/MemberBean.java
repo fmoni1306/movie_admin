@@ -10,7 +10,16 @@ public class MemberBean {
 	private String phone;
 	private String bio;
 	private Date date;
-	
+	private String introduce;
+
+	public String getIntroduce() {
+		return introduce;
+	}
+
+	public void setIntroduce(String introduce) {
+		this.introduce = introduce;
+	}
+
 	public String getBio() {
 		return bio;
 	}
@@ -18,8 +27,6 @@ public class MemberBean {
 	public void setBio(String bio) {
 		this.bio = bio;
 	}
-
-	
 
 	public Date getDate() {
 		return date;

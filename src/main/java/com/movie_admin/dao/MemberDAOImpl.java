@@ -10,6 +10,7 @@ import org.springframework.stereotype.Repository;
 import com.movie_admin.exception.AdminException;
 import com.movie_admin.vo.AdminBean;
 import com.movie_admin.vo.MemberBean;
+import com.movie_admin.vo.TotalBean;
 import com.sun.org.apache.xml.internal.utils.NameSpace;
 
 @Repository
@@ -42,6 +43,15 @@ public class MemberDAOImpl implements MemberDAO{
 			throw new AdminException("아이디 틀림");
 		}
 	}
+
+
+	@Override
+	public TotalBean getCount() {
+		
+		return sqlsession.selectOne(namespace+".getCount");
+	}
+	
+	
 	
 	
 

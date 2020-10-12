@@ -11,7 +11,7 @@
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>GotCha Admin</title>
+<title>GotCha Main</title>
 <meta name="description" content="Ela Admin - HTML5 Admin Template">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -100,103 +100,104 @@
 			<div id="main-menu" class="main-menu collapse navbar-collapse">
 				<ul class="nav navbar-nav">
 					<li class="active"><a href="<c:url value='/home/main'/>"><i
-							class="menu-icon fa fa-laptop"></i>Dashboard </a></li>
+							class="menu-icon fa fa-laptop"></i>메인 </a></li>
 					<li class="menu-title">UI elements</li>
 					<!-- /.menu-title -->
-					<li class="menu-item-has-children dropdown"><a href="#"
-						class="dropdown-toggle" data-toggle="dropdown"
-						aria-haspopup="true" aria-expanded="false"> <i
-							class="menu-icon fa fa-cogs"></i>Components
-					</a>
-						<ul class="sub-menu children dropdown-menu">
-							<li><i class="fa fa-puzzle-piece"></i><a href="#">Buttons</a></li>
-							<li><i class="fa fa-id-badge"></i><a href="#">Badges</a></li>
-							<li><i class="fa fa-bars"></i><a href="#">Tabs</a></li>
+<!-- 					<li class="menu-item-has-children dropdown"><a href="#" -->
+<!-- 						class="dropdown-toggle" data-toggle="dropdown" -->
+<!-- 						aria-haspopup="true" aria-expanded="false"> <i -->
+<!-- 							class="menu-icon fa fa-cogs"></i>Components -->
+<!-- 					</a> -->
+<!-- 						<ul class="sub-menu children dropdown-menu"> -->
+<!-- 							<li><i class="fa fa-puzzle-piece"></i><a href="#">Buttons</a></li> -->
+<!-- 							<li><i class="fa fa-id-badge"></i><a href="#">Badges</a></li> -->
+<!-- 							<li><i class="fa fa-bars"></i><a href="#">Tabs</a></li> -->
 
-							<li><i class="fa fa-id-card-o"></i><a href="#">Cards</a></li>
-							<li><i class="fa fa-exclamation-triangle"></i><a href="#">Alerts</a></li>
-							<li><i class="fa fa-spinner"></i><a href="#">Progress
-									Bars</a></li>
-							<li><i class="fa fa-fire"></i><a href="#">Modals</a></li>
-							<li><i class="fa fa-book"></i><a href="#">Switches</a></li>
-							<li><i class="fa fa-th"></i><a href="#">Grids</a></li>
-							<li><i class="fa fa-file-word-o"></i><a href="#">Typography</a></li>
-						</ul></li>
+<!-- 							<li><i class="fa fa-id-card-o"></i><a href="#">Cards</a></li> -->
+<!-- 							<li><i class="fa fa-exclamation-triangle"></i><a href="#">Alerts</a></li> -->
+<!-- 							<li><i class="fa fa-spinner"></i><a href="#">Progress -->
+<!-- 									Bars</a></li> -->
+<!-- 							<li><i class="fa fa-fire"></i><a href="#">Modals</a></li> -->
+<!-- 							<li><i class="fa fa-book"></i><a href="#">Switches</a></li> -->
+<!-- 							<li><i class="fa fa-th"></i><a href="#">Grids</a></li> -->
+<!-- 							<li><i class="fa fa-file-word-o"></i><a href="#">Typography</a></li> -->
+<!-- 						</ul></li> -->
 					<li class="menu-item-has-children dropdown"><a href="#"
 						class="dropdown-toggle" data-toggle="dropdown"
 						aria-haspopup="true" aria-expanded="false"> <i
-							class="menu-icon fa fa-table"></i>Tables
+							class="menu-icon fa fa-table"></i>데이터 조회
 					</a>
 						<ul class="sub-menu children dropdown-menu">
-							<li><i class="fa fa-table"></i><a href="#">Basic Table</a></li>
+							<li><i class="fa fa-table"></i><a href="<c:url value='/home/member'/>">전체회원</a></li>
 							<li><i class="fa fa-table"></i><a href="<c:url value='/home/movie'/>">영화평점</a></li>
+							<li><i class="fa fa-table"></i><a href="<c:url value='/home/collection'/>">컬렉션리스트</a></li>
 						</ul></li>
-					<li class="menu-item-has-children dropdown"><a href="#"
-						class="dropdown-toggle" data-toggle="dropdown"
-						aria-haspopup="true" aria-expanded="false"> <i
-							class="menu-icon fa fa-th"></i>Forms
-					</a>
-						<ul class="sub-menu children dropdown-menu">
-							<li><i class="menu-icon fa fa-th"></i><a href="#">Basic
-									Form</a></li>
-							<li><i class="menu-icon fa fa-th"></i><a href="#">Advanced
-									Form</a></li>
-						</ul></li>
+<!-- 					<li class="menu-item-has-children dropdown"><a href="#" -->
+<!-- 						class="dropdown-toggle" data-toggle="dropdown" -->
+<!-- 						aria-haspopup="true" aria-expanded="false"> <i -->
+<!-- 							class="menu-icon fa fa-th"></i>Forms -->
+<!-- 					</a> -->
+<!-- 						<ul class="sub-menu children dropdown-menu"> -->
+<!-- 							<li><i class="menu-icon fa fa-th"></i><a href="#">Basic -->
+<!-- 									Form</a></li> -->
+<!-- 							<li><i class="menu-icon fa fa-th"></i><a href="#">Advanced -->
+<!-- 									Form</a></li> -->
+<!-- 						</ul></li> -->
 
-					<li class="menu-title">Icons</li>
-					<!-- /.menu-title -->
+<!-- 					<li class="menu-title">Icons</li> -->
+<!-- 					/.menu-title -->
 
-					<li class="menu-item-has-children dropdown"><a href="#" 
-						class="dropdown-toggle" data-toggle="dropdown"
-						aria-haspopup="true" aria-expanded="false"> <i
-							class="menu-icon fa fa-tasks"></i>Icons
-					</a>
-						<ul class="sub-menu children dropdown-menu">
-							<li><i class="menu-icon fa fa-fort-awesome"></i><a href="#">Font
-									Awesome</a></li>
-							<li><i class="menu-icon ti-themify-logo"></i><a href="#">Themefy
-									Icons</a></li>
-						</ul></li>
-					<li><a href="#"> <i class="menu-icon ti-email"></i>Widgets
-					</a></li>
-					<li class="menu-item-has-children dropdown"><a href="#"
-						class="dropdown-toggle" data-toggle="dropdown"
-						aria-haspopup="true" aria-expanded="false"> <i
-							class="menu-icon fa fa-bar-chart"></i>Charts
-					</a>
-						<ul class="sub-menu children dropdown-menu">
-							<li><i class="menu-icon fa fa-line-chart"></i><a href="#">Chart
-									JS</a></li>
-							<li><i class="menu-icon fa fa-area-chart"></i><a href="#">Flot
-									Chart</a></li>
-							<li><i class="menu-icon fa fa-pie-chart"></i><a href="#">Peity
-									Chart</a></li>
-						</ul></li>
+<!-- 					<li class="menu-item-has-children dropdown"><a href="#"  -->
+<!-- 						class="dropdown-toggle" data-toggle="dropdown" -->
+<!-- 						aria-haspopup="true" aria-expanded="false"> <i -->
+<!-- 							class="menu-icon fa fa-tasks"></i>Icons -->
+<!-- 					</a> -->
+<!-- 						<ul class="sub-menu children dropdown-menu"> -->
+<!-- 							<li><i class="menu-icon fa fa-fort-awesome"></i><a href="#">Font -->
+<!-- 									Awesome</a></li> -->
+<!-- 							<li><i class="menu-icon ti-themify-logo"></i><a href="#">Themefy -->
+<!-- 									Icons</a></li> -->
+<!-- 						</ul></li> -->
+<!-- 					<li><a href="#"> <i class="menu-icon ti-email"></i>Widgets -->
+<!-- 					</a></li> -->
+<!-- 					<li class="menu-item-has-children dropdown"><a href="#" -->
+<!-- 						class="dropdown-toggle" data-toggle="dropdown" -->
+<!-- 						aria-haspopup="true" aria-expanded="false"> <i -->
+<!-- 							class="menu-icon fa fa-bar-chart"></i>Charts -->
+<!-- 					</a> -->
+<!-- 						<ul class="sub-menu children dropdown-menu"> -->
+<!-- 							<li><i class="menu-icon fa fa-line-chart"></i><a href="#">Chart -->
+<!-- 									JS</a></li> -->
+<!-- 							<li><i class="menu-icon fa fa-area-chart"></i><a href="#">Flot -->
+<!-- 									Chart</a></li> -->
+<!-- 							<li><i class="menu-icon fa fa-pie-chart"></i><a href="#">Peity -->
+<!-- 									Chart</a></li> -->
+<!-- 						</ul></li> -->
 
-					<li class="menu-item-has-children dropdown"><a href="#"
-						class="dropdown-toggle" data-toggle="dropdown"
-						aria-haspopup="true" aria-expanded="false"> <i
-							class="menu-icon fa fa-area-chart"></i>Maps
-					</a>
-						<ul class="sub-menu children dropdown-menu">
-							<li><i class="menu-icon fa fa-map-o"></i><a href="#">Google
-									Maps</a></li>
-							<li><i class="menu-icon fa fa-street-view"></i><a href="#">Vector
-									Maps</a></li>
-						</ul></li>
-					<li class="menu-title">Extras</li>
-					<!-- /.menu-title -->
-					<li class="menu-item-has-children dropdown"><a href="#"
-						class="dropdown-toggle" data-toggle="dropdown"
-						aria-haspopup="true" aria-expanded="false"> <i
-							class="menu-icon fa fa-glass"></i>Pages
-					</a>
-						<ul class="sub-menu children dropdown-menu">
-							<li><i class="menu-icon fa fa-sign-in"></i><a href="#">Login</a></li>
-							<li><i class="menu-icon fa fa-sign-in"></i><a href="#">Register</a></li>
-							<li><i class="menu-icon fa fa-paper-plane"></i><a href="#">Forget
-									Pass</a></li>
-						</ul></li>
+<!-- 					<li class="menu-item-has-children dropdown"><a href="#" -->
+<!-- 						class="dropdown-toggle" data-toggle="dropdown" -->
+<!-- 						aria-haspopup="true" aria-expanded="false"> <i -->
+<!-- 							class="menu-icon fa fa-area-chart"></i>Maps -->
+<!-- 					</a> -->
+<!-- 						<ul class="sub-menu children dropdown-menu"> -->
+<!-- 							<li><i class="menu-icon fa fa-map-o"></i><a href="#">Google -->
+<!-- 									Maps</a></li> -->
+<!-- 							<li><i class="menu-icon fa fa-street-view"></i><a href="#">Vector -->
+<!-- 									Maps</a></li> -->
+<!-- 						</ul></li> -->
+<!-- 					<li class="menu-title">Extras</li> -->
+<!-- 					/.menu-title -->
+<!-- 					<li class="menu-item-has-children dropdown"><a href="#" -->
+<!-- 						class="dropdown-toggle" data-toggle="dropdown" -->
+<!-- 						aria-haspopup="true" aria-expanded="false"> <i -->
+<!-- 							class="menu-icon fa fa-glass"></i>Pages -->
+<!-- 					</a> -->
+<!-- 						<ul class="sub-menu children dropdown-menu"> -->
+<!-- 							<li><i class="menu-icon fa fa-sign-in"></i><a href="#">Login</a></li> -->
+<!-- 							<li><i class="menu-icon fa fa-sign-in"></i><a href="#">Register</a></li> -->
+<!-- 							<li><i class="menu-icon fa fa-paper-plane"></i><a href="#">Forget -->
+<!-- 									Pass</a></li> -->
+<!-- 						</ul></li> -->
 				</ul>
 			</div>
 			<!-- /.navbar-collapse -->
@@ -336,9 +337,9 @@
 									<div class="stat-content">
 										<div class="text-left dib">
 											<div class="stat-text">
-												$<span class="count">333333</span>
+												<span class="count">${count.gradeCount}</span>
 											</div>
-											<div class="stat-heading">Revenue</div>
+											<div class="stat-heading">Total Grade</div>
 										</div>
 									</div>
 								</div>
@@ -356,9 +357,9 @@
 									<div class="stat-content">
 										<div class="text-left dib">
 											<div class="stat-text">
-												<span class="count">3435</span>
+												<span class="count">${count.memberCount}</span>
 											</div>
-											<div class="stat-heading">Sales</div>
+											<div class="stat-heading">Total Member</div>
 										</div>
 									</div>
 								</div>
@@ -376,9 +377,9 @@
 									<div class="stat-content">
 										<div class="text-left dib">
 											<div class="stat-text">
-												<span class="count">349</span>
+												<span class="count">${count.reviewCount}</span>
 											</div>
-											<div class="stat-heading">Templates</div>
+											<div class="stat-heading">Total Review</div>
 										</div>
 									</div>
 								</div>
@@ -396,9 +397,9 @@
 									<div class="stat-content">
 										<div class="text-left dib">
 											<div class="stat-text">
-												<span class="count">2986</span>
+												<span class="count">${count.wishCount}</span>
 											</div>
-											<div class="stat-heading">Clients</div>
+											<div class="stat-heading">Total Wish</div>
 										</div>
 									</div>
 								</div>
@@ -406,86 +407,86 @@
 						</div>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-md-12">
-						<div class="card">
-							<div class="card-header">
-								<strong class="card-title">Data Table</strong>
-							</div>
-							<div class="card-body">
-								<table id="bootstrap-data-table"
-									class="table table-striped table-bordered">
-									<thead>
-										<tr>
-											<th>프로필사진</th>
-											<th>닉네임</th>
-											<th>이메일</th>
-											<th>연락처</th>
-											<th>가입날짜</th>
-										</tr>
-									</thead>
-									<tbody>
-										<c:forEach var="mb" items="${memberList }">
-											<tr>
-												<td class="avatar">
-													<div class="round-img">
-														<a href="#"><img class="rounded-circle"
-															src="${pageContext.request.contextPath}/resources/images/avatar/1.jpg"
-															alt=""></a>
-													</div>
-												</td>
-												<td><span class="nick">${mb.nick }</span></td>
-												<td><span class="email">${mb.email }</span></td>
-												<td><span class="phone">${mb.phone }</span></td>
-												<td><span class="date">${mb.date }</span></td>
-												</td>
-											</tr>
-										</c:forEach>
-									</tbody>
-								</table>
-							</div>
-						</div>
-					</div>
-					<!-- /Widgets -->
-				</div>
+<!-- 				<div class="row"> -->
+<!-- 					<div class="col-md-12"> -->
+<!-- 						<div class="card"> -->
+<!-- 							<div class="card-header"> -->
+<!-- 								<strong class="card-title">Data Table</strong> -->
+<!-- 							</div> -->
+<!-- 							<div class="card-body"> -->
+<!-- 								<table id="bootstrap-data-table" -->
+<!-- 									class="table table-striped table-bordered"> -->
+<!-- 									<thead> -->
+<!-- 										<tr> -->
+<!-- 											<th>프로필사진</th> -->
+<!-- 											<th>닉네임</th> -->
+<!-- 											<th>이메일</th> -->
+<!-- 											<th>연락처</th> -->
+<!-- 											<th>가입날짜</th> -->
+<!-- 										</tr> -->
+<!-- 									</thead> -->
+<!-- 									<tbody> -->
+<%-- 										<c:forEach var="mb" items="${memberList }"> --%>
+<!-- 											<tr> -->
+<!-- 												<td class="avatar"> -->
+<!-- 													<div class="round-img"> -->
+<!-- 														<a href="#"><img class="rounded-circle" -->
+<%-- 															src="${pageContext.request.contextPath}/resources/images/avatar/1.jpg" --%>
+<!-- 															alt=""></a> -->
+<!-- 													</div> -->
+<!-- 												</td> -->
+<%-- 												<td><span class="nick">${mb.nick }</span></td> --%>
+<%-- 												<td><span class="email">${mb.email }</span></td> --%>
+<%-- 												<td><span class="phone">${mb.phone }</span></td> --%>
+<%-- 												<td><span class="date">${mb.date }</span></td> --%>
+<!-- 												</td> -->
+<!-- 											</tr> -->
+<%-- 										</c:forEach> --%>
+<!-- 									</tbody> -->
+<!-- 								</table> -->
+<!-- 							</div> -->
+<!-- 						</div> -->
+<!-- 					</div> -->
+<!-- 					/Widgets -->
+<!-- 				</div> -->
 				<!--  Traffic  -->
 				<!--  /Traffic -->
 				<div class="clearfix"></div>
 				<!-- Orders -->
-				<div class="orders">
-					<div class="row">
-						<div class="col-xl-8">
-							<div class="card">
-								<div class="card-body">
-									<h4 class="box-title">REPORT</h4>
-								</div>
-								<div class="card-body--">
-									<div class="table-stats order-table ov-h">
-										<table class="table ">
-											<thead>
-												<tr>
-													<th class="serial">#</th>
-													<th class="avatar">Avatar</th>
-													<th>ID</th>
-													<th>Name</th>
-													<th>Product</th>
-													<th>Quantity</th>
-													<th>Status</th>
-												</tr>
-											</thead>
-											<tbody>
-											</tbody>
-										</table>
-									</div>
-									<!-- /.table-stats -->
-								</div>
-							</div>
-							<!-- /.card -->
-						</div>
-						<!-- /.col-lg-8 -->
+<!-- 				<div class="orders"> -->
+<!-- 					<div class="row"> -->
+<!-- 						<div class="col-xl-8"> -->
+<!-- 							<div class="card"> -->
+<!-- 								<div class="card-body"> -->
+<!-- 									<h4 class="box-title">REPORT</h4> -->
+<!-- 								</div> -->
+<!-- 								<div class="card-body--"> -->
+<!-- 									<div class="table-stats order-table ov-h"> -->
+<!-- 										<table class="table "> -->
+<!-- 											<thead> -->
+<!-- 												<tr> -->
+<!-- 													<th class="serial">#</th> -->
+<!-- 													<th class="avatar">Avatar</th> -->
+<!-- 													<th>ID</th> -->
+<!-- 													<th>Name</th> -->
+<!-- 													<th>Product</th> -->
+<!-- 													<th>Quantity</th> -->
+<!-- 													<th>Status</th> -->
+<!-- 												</tr> -->
+<!-- 											</thead> -->
+<!-- 											<tbody> -->
+<!-- 											</tbody> -->
+<!-- 										</table> -->
+<!-- 									</div> -->
+<!-- 									/.table-stats -->
+<!-- 								</div> -->
+<!-- 							</div> -->
+<!-- 							/.card -->
+<!-- 						</div> -->
+<!-- 						/.col-lg-8 -->
 
-					</div>
-				</div>
+<!-- 					</div> -->
+<!-- 				</div> -->
 				<!-- /.orders -->
 				<!-- To Do and Live Chat -->
 				<!-- /To Do and Live Chat -->
@@ -518,48 +519,6 @@
 				</div>
 				<!-- /#event-modal -->
 				<!-- Modal - Calendar - Add Category -->
-				<div class="modal fade none-border" id="add-category">
-					<div class="modal-dialog">
-						<div class="modal-content">
-							<div class="modal-header">
-								<button type="button" class="close" data-dismiss="modal"
-									aria-hidden="true">&times;</button>
-								<h4 class="modal-title">
-									<strong>Add a category </strong>
-								</h4>
-							</div>
-							<div class="modal-body">
-								<form>
-									<div class="row">
-										<div class="col-md-6">
-											<label class="control-label">Category Name</label> <input
-												class="form-control form-white" placeholder="Enter name"
-												type="text" name="category-name" />
-										</div>
-										<div class="col-md-6">
-											<label class="control-label">Choose Category Color</label> <select
-												class="form-control form-white"
-												data-placeholder="Choose a color..." name="category-color">
-												<option value="success">Success</option>
-												<option value="danger">Danger</option>
-												<option value="info">Info</option>
-												<option value="pink">Pink</option>
-												<option value="primary">Primary</option>
-												<option value="warning">Warning</option>
-											</select>
-										</div>
-									</div>
-								</form>
-							</div>
-							<div class="modal-footer">
-								<button type="button" class="btn btn-default waves-effect"
-									data-dismiss="modal">Close</button>
-								<button type="button"
-									class="btn btn-danger waves-effect waves-light save-category"
-									data-dismiss="modal">Save</button>
-							</div>
-						</div>
-					</div>
 				</div>
 				<!-- /#add-category -->
 			</div>

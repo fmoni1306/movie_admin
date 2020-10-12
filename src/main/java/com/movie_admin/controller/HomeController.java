@@ -15,6 +15,7 @@ import com.movie_admin.exception.AdminException;
 import com.movie_admin.service.MemberService;
 import com.movie_admin.vo.AdminBean;
 import com.movie_admin.vo.MemberBean;
+import com.movie_admin.vo.TotalBean;
 
 @Controller
 public class HomeController {
@@ -29,6 +30,9 @@ public class HomeController {
 	
 	@RequestMapping(value = "/home/main", method = RequestMethod.GET)
 	public String home(Model model) {
+		TotalBean tb =  memberService.getCount();
+		System.out.println(tb.getGradeCount()+"11111");
+		model.addAttribute("count",tb);
 		return "home";
 	}
 	

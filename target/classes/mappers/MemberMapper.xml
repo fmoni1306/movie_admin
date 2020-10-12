@@ -11,4 +11,9 @@
   	SELECT id,pass from admin;
   </select>
   
+  <select id="getCount" resultType="com.movie_admin.vo.TotalBean">
+  SELECT A.gradeCount,B.memberCount,C.reviewCount,D.wishCount from (select count(*) gradeCount from grade) A ,(select count(*) memberCount from member) B,(select count(*) reviewCount from review) C, (select count(*) wishCount from wish) D;
+  </select>
+  
+  
   </mapper>

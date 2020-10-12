@@ -7,11 +7,15 @@ import javax.inject.Inject;
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.stereotype.Repository;
 
+import com.movie_admin.vo.CollectionBean;
 import com.movie_admin.vo.MovieBean;
 
 @Repository
 public class MovieDAOImpl implements MovieDAO {
 
+	private final static String type1 = "1";
+	private final static String type2 = "2";
+	
 	@Inject
 	SqlSession sqlSession;
 	
@@ -23,5 +27,39 @@ public class MovieDAOImpl implements MovieDAO {
 		
 		return sqlSession.selectList(namespace+".getMovieGrade"); 
 	}
+
+	@Override
+	public List<CollectionBean> getMovieCollection() {
+		return sqlSession.selectList(namespace+".getMovieCollection");
+	}
+
+	@Override
+	public void setIdx(String str,String type) {
+		
+		if(type.equals(type1)) {
+			sqlSession.insert(namespace+".setCollectionIdx",str);
+		}else {
+			sqlSession.insert(namespace+".setCollectionIdx2",str);
+		}
+	}
+
+	@Override
+	public CollectionBean getCollection(String type) {
+		
+		if(type.equals(type1)) {
+			return sqlSession.selectOne(namespace+".getCollection1");
+		}else {
+			System.out.println("여긴오나요 겟컬렉션2");
+			return sqlSession.selectOne(namespace+".getCollection2");
+		}
+		
+		
+	}
+	
+	
+	
+	
+	
+	
 
 }
