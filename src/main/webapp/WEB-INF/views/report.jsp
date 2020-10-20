@@ -9,7 +9,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>영화 평점</title>
+    <title>신고</title>
     <meta name="description" content="Ela Admin - HTML5 Admin Template">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -215,23 +215,21 @@
                                     <thead>
                                         <tr>
                                             <th>Nick</th>
-                                            <th>grade</th>
-                                            <th>genre</th>
-                                            <th>title</th>
-                                            <th>director</th>
-                                            <th>nation</th>
+                                            <th>Title</th>
+                                            <th>Content</th>
+                                            <th>Report</th>
+                                            <th>Delete</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                     <c:forEach var="ml" items="${MovieList }">
+                                     <c:forEach var="rb" items="${ReviewBean }">
                                      <tr>
                                      
-                                            <td>${ml.nick}</td>
-                                            <td>${ml.grade}</td>
-                                            <td>${ml.genre}</td>
-                                            <td>${ml.title}</td>
-                                            <td>${ml.director}</td>
-                                            <td>${ml.nation}</td>
+                                            <td>${rb.nick}</td>
+                                            <td>${rb.title}</td>
+                                            <td>${rb.content}</td>
+                                            <td>${rb.report}</td>
+                                            <td><button value="${rb.idx}" class="deleteBtn">리뷰삭제</button></td>
 
                                         </tr>
                                      </c:forEach>
@@ -290,6 +288,23 @@
     <script type="text/javascript">
         $(document).ready(function() {
           $('#bootstrap-data-table-export').DataTable();
+          
+          $('.deleteBtn').click(function(){
+         	 $.ajax({
+         		url : "deleteReview",
+         		method : "get",
+         		data : 
+         			{
+         			idx : $(this).val()
+         			},
+         		success:function(data){
+         			
+         			alert("리뷰삭제");
+         			location.reload();
+         		}
+         		
+         	 });
+           });
       } );
   </script>
 

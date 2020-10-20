@@ -21,11 +21,23 @@
   </insert>
   
   <select id="getCollection1" resultType="com.movie_admin.vo.CollectionBean">
-  	SELECT * from collection A JOIN collection_idx B ON A.idx = B.collection_idx group by A.idx order by B.date desc limit 1;
+  	SELECT * from collection A JOIN collection_idx B ON A.idx = B.collection_idx order by B.date desc limit 1;
   </select>
   
   <select id="getCollection2" resultType="com.movie_admin.vo.CollectionBean">
-  	SELECT * from collection A JOIN collection_idx2 B ON A.idx = B.collection_idx group by A.idx order by B.date desc limit 1;
+  	SELECT * from collection A JOIN collection_idx2 B ON A.idx = B.collection_idx order by B.date desc limit 1;
+  </select>
+  
+  <select id="getReviewReport" resultType="com.movie_admin.vo.ReviewBean">
+  	SELECT * from review where report >0;
+  </select>
+  
+  <delete id="deleteReview">
+  	DELETE from review where idx = #{idx};
+  </delete>
+  
+  <select id="getReplyReport" resultType="com.movie_admin.vo.ReviewBean">
+  	SELECT * from review where reply >0;
   </select>
   
   </mapper>

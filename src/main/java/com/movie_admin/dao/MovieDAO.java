@@ -4,6 +4,7 @@ import java.util.List;
 
 import com.movie_admin.vo.CollectionBean;
 import com.movie_admin.vo.MovieBean;
+import com.movie_admin.vo.ReviewBean;
 
 public interface MovieDAO {
 
@@ -15,5 +16,9 @@ public interface MovieDAO {
 	void setIdx(String idx, String type);
 
 	CollectionBean getCollection(String type);
+
+	List<ReviewBean> getReview();
+
+	void deleteReview(String idx);
 
 }

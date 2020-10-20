@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 import com.movie_admin.dao.MovieDAO;
 import com.movie_admin.vo.CollectionBean;
 import com.movie_admin.vo.MovieBean;
+import com.movie_admin.vo.ReviewBean;
 
 @Service
 public class MovieServiceImpl implements MovieService {
@@ -37,6 +38,19 @@ public class MovieServiceImpl implements MovieService {
 		
 		return movieDAO.getCollection(type);
 	}
+
+	@Override
+	public List<ReviewBean> getReviewBean() {
+		return movieDAO.getReview();
+	}
+
+	@Override
+	public void deleteReview(String idx) {
+		movieDAO.deleteReview(idx);
+		
+	}
+	
+	
 	
 	
 

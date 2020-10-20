@@ -14,6 +14,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import com.movie_admin.service.MovieService;
 import com.movie_admin.vo.CollectionBean;
 import com.movie_admin.vo.MovieBean;
+import com.movie_admin.vo.ReplyBean;
+import com.movie_admin.vo.ReviewBean;
 
 @Controller
 public class MovieController {
@@ -38,7 +40,6 @@ public class MovieController {
 		model.addAttribute("collectionList",cb);
 		return "collection";
 	}
-	
 	@RequestMapping(value = "/home/collectionIdx", method = RequestMethod.GET)
 	public String collection(HttpServletRequest request) {
 		System.out.println("컬렉션컨트롤러Idx");
@@ -48,5 +49,23 @@ public class MovieController {
 		System.out.println(idx);
 		return "collection";
 	}
+	
+	@RequestMapping(value = "/home/report", method = RequestMethod.GET)
+	public String report(Model model) {
+		System.out.println("컬렉션컨트롤러");
+		List<ReviewBean> list = movieService.getReviewBean();
+		model.addAttribute("ReviewBean",list);
+		return "report";
+	}
+	
+	@RequestMapping(value = "/home/deleteReview", method = RequestMethod.GET)
+	public String deleteReview(HttpServletRequest request) {
+		System.out.println("컬렉션컨트롤러");
+		String idx = request.getParameter("idx");
+		movieService.deleteReview(idx);
+		return "report";
+	}
+	
+	
 	
 }

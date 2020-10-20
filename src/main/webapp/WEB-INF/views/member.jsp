@@ -50,6 +50,7 @@
 							<li><i class="fa fa-table"></i><a href="<c:url value='/home/member'/>">전체회원</a></li>
 							<li><i class="fa fa-table"></i><a href="<c:url value='/home/movie'/>">영화평점</a></li>
 							<li><i class="fa fa-table"></i><a href="<c:url value='/home/collection'/>">컬렉션리스트</a></li>
+							<li><i class="fa fa-table"></i><a href="<c:url value='/home/report'/>">신고</a></li>
 						</ul></li>
 				</ul>
 			</div>

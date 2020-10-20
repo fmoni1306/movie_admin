@@ -9,6 +9,7 @@ import org.springframework.stereotype.Repository;
 
 import com.movie_admin.vo.CollectionBean;
 import com.movie_admin.vo.MovieBean;
+import com.movie_admin.vo.ReviewBean;
 
 @Repository
 public class MovieDAOImpl implements MovieDAO {
@@ -55,6 +56,21 @@ public class MovieDAOImpl implements MovieDAO {
 		
 		
 	}
+
+	@Override
+	public List<ReviewBean> getReview() {
+		
+		return sqlSession.selectList(namespace+".getReviewReport");
+	}
+
+	@Override
+	public void deleteReview(String idx) {
+		System.out.println("여기옴?"+idx);
+		sqlSession.delete(namespace+".deleteReview", idx);
+	}
+	
+	
+	
 	
 	
 	
